@@ -1,26 +1,118 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Vanawy</title>
-		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div>
-        		<h1>Hello there!</h1>
-    		</div>
-		</div>
-		<footer>
-    		<ul>
-        		<li><a href="mailto:saharchuk999@gmail.com">E-mail</a></li>
-        		<li><a href="https://t.me/vanawy">Telegram</a></li>
-        		<li><a href="https://github.com/vanawy">Github</a></li>
-			</ul>
-		</footer>
-	</body>
+
+<head>
+    <title>VANAWY</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <script src="https://kit.fontawesome.com/569f6d8f28.js" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css'>
+</head>
+
+<body>
+    <div class="bg"></div>
+    <div class="main">
+        <div class="container">
+            <div class="about">                
+                <h1 class="text">VANAWY</h1>
+                <p class="text-block"><span>My name is Ilya Sakharchuk. I'm web-developer from Brest, Belarus.</span></p>
+                <div>
+                    <!-- <p class="text-block">Skills:</p> -->
+                    <div class="skills text-block">
+                        <span class="">Skills:</span>
+                        <span class="main">PHP</span>
+                        <span class="main">Symfony 3/4</span>
+                        <span class="main">MySQL</span>
+                        <span>HTML/CSS</span>
+                        <span>JavaScript</span>
+                        <span>VueJS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="contacts">
+            <a class="link" href="mailto:saharchuk999@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            <a class="link" href="https://t.me/vanawy" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+            <a class="link" href="https://github.com/vanawy" target="_blank"><i class="fab fa-github"></i></a>
+            <p>Page and illustration by me</p>
+        </div>
+    </footer>
+</body>
+<style>
+body {
+    background-color: #e0abdf;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: Hack, monospace;
+    color: white;
+}
+
+::selection {
+    background-color: #e0abdf;
+}
+
+h1 {
+    font-size: 5vh;
+    padding: 1vw;
+    letter-spacing: 1vw;
+}
+
+.bg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url("./src/main.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -100;
+}
+
+.main {
+    height: 60vh;
+}
+
+.about span{
+    padding: 1vh;
+    background-color: #36273a60;
+}
+
+.contacts {
+    justify-content: center;
+    background-color: #a8dad7aa;
+    padding: 10vh;
+    list-style: none;
+}
+
+.contacts .link {
+    font-size: 5vh;
+    padding: 1vw;
+}
+
+.skills span {
+    padding: 1vh;
+    background-color: #36273a60;
+}
+
+.skills .main {
+    font-weight:bold; 
+}
+
+a:link,
+a:visited {
+    color: white;
+}
+
+a:hover,
+a:active {
+    color: #e0abdf;
+}
+</style>
+
 </html>
